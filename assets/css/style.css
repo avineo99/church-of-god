@@ -111,6 +111,31 @@ h1, .h1{
 .object-cover{
     object-fit: cover;
 }
+
+
+
+
+.navbar-nav .nav-link {
+    font-size: 20px;
+    color: #fff;
+    padding: 5px 0px;
+    letter-spacing: 0.05em;
+    font-weight: 400;
+    font-family: "Bebas Neue", sans-serif;
+
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 0;
+    padding-left: 0;
+}
+.navbar-nav>li+li {
+    margin-left: 80px;
+}
+
+
+
+
+
 /* hero section css start */
 .hero-section{
     background-image: url(../images/hero-banner.jpg);
@@ -229,6 +254,9 @@ h1, .h1{
     .fs-30 {
         font-size: 28px;
     }
+    .navbar-nav>li+li {
+        margin-left: 60px;
+    }
 }
 
 @media(max-width:1200px){
@@ -253,6 +281,9 @@ h1, .h1{
     .fs-15 {
         font-size: 14px;
     }
+    .navbar-nav .nav-link {
+        font-size: 18px;
+    }
 }
 @media(max-width:991px){
     .nav-right {
@@ -266,6 +297,7 @@ h1, .h1{
         z-index: 9;
         transition: all 0.3s linear;
         transform: translateX(-100%);
+        align-items: flex-start;
     }
     .menuToggle .nav-right{
         transform: translateX(0%);
@@ -304,6 +336,9 @@ h1, .h1{
     }
     .fs-15 {
         font-size: 11px;
+    }
+    .navbar-nav>li+li {
+        margin-left: 0;
     }
 }
 
